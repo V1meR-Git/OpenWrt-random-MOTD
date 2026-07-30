@@ -13,12 +13,13 @@ cp /root/OpenWrt-random-MOTD/root/banners/* /root/banners/
 echo "Выдача прав..."
 chmod +x /etc/profile.d/apk-cheatsheet.sh
 chmod 644 /root/banners/*
+echo "Установка завершена"
 
 printf "Удалить git и git-http ? [y/N]: "
 read answer < /dev/tty
 case "$answer" in
     [Yy]|[Yy][Ee][Ss])
-        apk del git
+        apk del git-http && apk del git
         echo "Удалено."
         ;;
     *)
