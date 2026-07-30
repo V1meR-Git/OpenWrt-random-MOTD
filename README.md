@@ -1,5 +1,5 @@
 # OpenWrt-random-MOTD
-Замена шпаргалки apk на OpenWrt 25
+Замена шпаргалки apk в терминале на OpenWrt 25
 
 ### Установка
 ```sh
