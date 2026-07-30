@@ -10,3 +10,5 @@ curl -L https://raw.githubusercontent.com/V1meR-Git/OpenWrt-random-MOTD/refs/hea
 wget -qO- https://raw.githubusercontent.com/V1meR-Git/OpenWrt-random-MOTD/refs/heads/main/install.sh | sh
 ```
 <img width="1029" height="433" alt="изображение" src="https://github.com/user-attachments/assets/a0cf2490-1601-47ed-90f2-ebe2e1040696" />
+
+Сообщения появляются в случайном порядке из тех что лежат в /root/banners/
