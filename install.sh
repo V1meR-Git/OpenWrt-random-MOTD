@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Установка Git..."
-apk update && apk add git
+apk update && apk add git-http
 
 echo "Установлен, клонирование репозитория..."
 git clone https://github.com/V1meR-Git/OpenWrt-random-MOTD.git /root/OpenWrt-random-MOTD
