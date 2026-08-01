@@ -1,9 +1,12 @@
 #!/bin/sh
 echo "Установка Git..."
-apk update && apk add git && apk add git-http
+apk update && apk add git git-http
 
 echo "Установлен, клонирование репозитория..."
-git clone https://github.com/V1meR-Git/OpenWrt-random-MOTD.git /root/OpenWrt-random-MOTD
+if ! git clone https://github.com/V1meR-Git/OpenWrt-random-MOTD.git /root/OpenWrt-random-MOTD; then
+    echo "Ошибка клонирования репозитория, прерываю установку."
+    exit 1
+fi
 mkdir -p /root/banners
 
 echo "Копирование файлов..."
