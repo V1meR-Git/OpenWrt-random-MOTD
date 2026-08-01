@@ -30,4 +30,7 @@ esac
 echo "Очистка хвостов..."
 rm -rf /root/OpenWrt-random-MOTD
 
+echo "Отключаем стандартный /etc/banner"
+sed -i '/\[ -f \/etc\/banner \] && cat \/etc\/banner/d' /etc/profile
+
 echo "Готово, нужно переподключиться по ssh"
